@@ -1,50 +1,45 @@
-# React + TypeScript + Vite
+# Time Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple time-tracking application built with React, ShadCN, and i18next for localization. The application includes:
 
-Currently, two official plugins are available:
+-  A **dark mode** toggle feature.
+-  Multi-language support with **i18n** (e.g., English and Persian).
+-  An intuitive timer and activity-tracking interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+-  Start/Stop timer to track your work.
+-  Activity log with durations for completed tasks.
+-  Dark mode support using ShadCN components.
+-  Multi-language support with i18next.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+-  **React**: For building the user interface.
+-  **ShadCN**: For beautiful and accessible UI components.
+-  **i18next**: For internationalization and localization.
+-  **Vite**: For fast development and build processes.
+-  **Tailwind CSS**: For styling.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Prerequisites
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+Ensure you have the following installed:
+
+-  **Node.js** (>= 14.x)
+-  **npm** or **yarn**
+-  A modern web browser
+
+---
+
+## Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/msh-rzi/time-tracker.git
+cd time-tracker
 ```
